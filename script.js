@@ -143,4 +143,21 @@ block.onclick = function () {
         message = `You have been spend ${userSumm}$, NO DISCOUNT FOR YOU, so final summ is ${userSumm}$`
     }
     alert(message)
+
+
+    let points = 0;
+    let userQuestion1 = prompt("What the color of clear sky? 1. - white; 2 - red; 3 - blue")
+    let userQuestion2 = prompt("What the color of lager beer? 1. - yellow; 2 - red; 3 - blue")
+    let userQuestion3 = prompt("What is my name? 1. - Nazar; 2 - Taras; 3 - Mike")
+    if (userQuestion1 == 3) {
+        points += 2;
+    }
+    if (userQuestion2 == 1) {
+        points += 2;
+    }
+    if (userQuestion3 == 1) {
+        points += 2;
+    }
+    alert(`You gained ${points} points`)
 }
+
